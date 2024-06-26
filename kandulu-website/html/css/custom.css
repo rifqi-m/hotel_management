@@ -1,0 +1,45 @@
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.carousel-control-prev {
+    left: 15px; /* Adjust the distance from the left edge */
+}
+
+.carousel-control-next {
+    right: 15px; /* Adjust the distance from the right edge */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid #f5f5dc;
+    border-width: 0 4px 4px 0;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(135deg);
+    margin-left: 10px;
+}
+
+.carousel-control-next-icon {
+    transform: rotate(-45deg);
+    margin-right: 10px;
+}
